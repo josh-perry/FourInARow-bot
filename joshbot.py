@@ -65,7 +65,7 @@ class JoshBot(Bot):
                     if self.board[check_x][check_y] == 0:
                         return (check_x, check_y)
 
-            if self.board[check_x][check_y] != player:
-                return
+                if self.board[check_x][check_y] != player:
+                    return
             except IndexError as ex:
                 return
